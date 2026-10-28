@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobinuf8s-vecdb_jd014"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出向量数据库内核工程师·训练数据配比与课程学习上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "mobinuf8s" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://mobinuf8s.github.io"
+Repository = "https://github.com/mobinuf8s/vecdb_jd014"
+Issues = "https://github.com/mobinuf8s/vecdb_jd014/issues"
+
+[project.scripts]
+vecdb_jd014 = "vecdb_jd014:main"
+
+[tool.setuptools]
+py-modules = ["vecdb_jd014"]
